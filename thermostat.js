@@ -35,7 +35,17 @@ class Thermostat {
     }
 
     reset() {
-        this.temperature;
+        this.temperature = 20;
+    }
+
+    energyUsage(number) {
+        if (number <= 18) {
+            return 'Your energy usage is low!';
+        } else if (number >= 19 && number <= 25) {
+            return 'Your energy usage is medium!';
+        } else {
+            return 'Your energy usage is high!';
+        }
     }
 
 }
